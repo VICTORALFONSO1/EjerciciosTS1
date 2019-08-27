@@ -4,7 +4,7 @@ var shape = {
 
         console.log('This inside popup(): ' + this.name);
 
-        setTimeout(function(){
+        setTimeout( () => {
             console.log('This insidesetTimeout(): ' + this.name);
             console.log("I'm a " + this.name + "!");
         }, 3000);
