@@ -1,10 +1,10 @@
 //cuando strictNullChecks es true
 var a = undefined; //ok
 var b = null; //error
-var c = undefined; //error
-var d = undefined; //ok
+var c = 3; //error
+var d = "apple"; //error
 //cuando strictNullChecks es false
 var a1 = undefined; //ok
 var b1 = null; //ok
-var c1 = undefined; //ok
-var d1 = undefined; //ok
+var c1 = 3; //error
+var d1 = "apple"; //error
