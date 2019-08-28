@@ -1,16 +1,27 @@
 //cuando strictNullChecks es true
-var a = undefined; // Error
-var b = null; // Error
-var c = "";
-var d = "y";
-var e = "building";
-var f = 3; //Error
-var g = "3";
+//let a: string = undefined; // Error
+//let b: string = null; // Error
+//let c: string = ""; 
+//let d: string = "y"; 
+//let e: string = "building"; 
+//let f: string = 3; //Error
+//let g: string = "3"; 
 //cuando strictNullChecks es false
-var a1 = undefined; // Ok
-var b1 = null; // Ok
-var c1 = "";
-var d1 = "y";
-var e1 = "building";
-var f1 = 3; //Error
-var g1 = "3";
+//let a1: string = undefined; // Ok
+//let b1: string = null; // Ok
+//let c1: string = ""; 
+//let d1: string = "y"; 
+//let e1: string = "building"; 
+//let f1: string = 3; //Error
+//let g1: string = "3"; 
+var Animals;
+(function (Animals) {
+    Animals[Animals["cat"] = 0] = "cat";
+    Animals[Animals["lion"] = 1] = "lion";
+    Animals[Animals["dog"] = 2] = "dog";
+    Animals[Animals["cow"] = 3] = "cow";
+    Animals[Animals["monkey"] = 4] = "monkey";
+})(Animals || (Animals = {}));
+var c = Animals.cat;
+console.log(Animals[3]); // cow
+console.log(Animals.monkey); // 4
