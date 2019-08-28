@@ -8,9 +8,19 @@ class Person {
     }
 }
 
-let personA = new Person("Sally");
-personA.introduceSelf();
+class Friend extends Person {
+    yearsKnown: number;
+    constructor (name: string, yearsKnown: number){
+        super(name);
+        this.yearsKnown = yearsKnown;
+    }
+    timeKnown() {
+        console.log("We have been friends for " + this.yearsKnown + " years.");
+    }
+}
 
-personA.name = "Mindy";
+let friendA = new Friend("Jacob", 6);
 
-personA.introduceSelf();
+friendA.introduceSelf();
+
+friendA.timeKnown();
