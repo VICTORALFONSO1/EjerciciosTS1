@@ -10,3 +10,7 @@ class Person {
 
 let personA = new Person("Sally");
 personA.introduceSelf();
+
+personA.name = "Mindy";
+
+personA.introduceSelf();
