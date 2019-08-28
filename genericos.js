@@ -1,7 +1,4 @@
-function randomElem(theArray) {
-    var randomIndex = Math.floor(Math.random() * theArray.length);
-    return theArray[randomIndex];
+function removeChar(theString, theChar) {
+    var theRegex = new RegExp(theChar, "gi");
+    return theString.replace(theRegex, '');
 }
-var colors = ['violet', 'indigo', 'blue', 'green'];
-var randomColor = randomElem(colors);
-console.log(randomColor);
