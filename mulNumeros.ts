@@ -1,7 +1,7 @@
-let a: number = 12;
-let b: number = 17;
+let a = 12;
+let b = 17;
 
-function showProduct(first: number, second: number): void {
+function showProduct(first, second): void {
     console.log("The product is " + first * second);
 }
 
