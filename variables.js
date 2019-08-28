@@ -1,3 +1,8 @@
-var a = "apple";
-var b = 3;
-var c = false;
+var a; //ok
+var b = false; // Error
+var c = null; // Error
+var d = "monday"; // Error
+function stuck() {
+    while (true) {
+    }
+}
