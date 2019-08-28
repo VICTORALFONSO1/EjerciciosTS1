@@ -1,10 +1,16 @@
 //cuando strictNullChecks es true
-var a = true;
-var b = false;
-var c = 23; //error
-var d = "blue"; //error
+var a = undefined; // Error
+var b = null; // Error
+var c = 3;
+var d = 57; //binary
+var e = 286; //octal
+var f = 0xadf0d; //hexadecimal
+var g = "cat"; // error
 //cuando strictNullChecks es false
-//let a1: void = undefined; //ok
-//let b1: void = null; //ok
-//let c1: void = 3; //error
-//let d1: void = "apple"; //error
+var a1 = undefined; // ok
+var b1 = null; // ok
+var c1 = 3;
+var d1 = 57; // binary
+var e1 = 286; //Octal
+var f1 = 0xadf0d; // Hexadecimal
+var g1 = "cat"; // Error
