@@ -4,3 +4,4 @@ function randomElem(theArray) {
 }
 var colors = ['violet', 'indigo', 'blue', 'green'];
 var randomColor = randomElem(colors);
+console.log(randomColor);
