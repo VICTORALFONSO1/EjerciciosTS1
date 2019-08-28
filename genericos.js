@@ -1,6 +1,6 @@
-function randomIntElem(theArray) {
+function randomElem(theArray) {
     var randomIndex = Math.floor(Math.random() * theArray.length);
     return theArray[randomIndex];
 }
-var positions = [103, 458, 472, 458];
-var randomPosition = randomIntElem(positions);
+var colors = ['violet', 'indigo', 'blue', 'green'];
+var randomColor = randomElem(colors);
