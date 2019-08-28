@@ -13,4 +13,13 @@ let tank: Enemy = {
 
 tank.health = 95;
 // Error porque 'damage' esde solo lectura
-tank.damage = 10;
+//tank.damage = 10;
+
+interface EnemyHit {
+    (name: Enemy, damageDone: number): number;
+}
+
+let tankHit: EnemyHit = function(tankName: Enemy, damageDone: number) {
+    tankName.health -= damageDone;
+    return tankName.health;
+}
