@@ -1,19 +1,19 @@
 //cuando strictNullChecks es true
-let a: number = undefined; // Error
-let b: number = null; // Error
-let c: number = 3; 
-let d: number = 0b111001; //binary
-let e: number = 0o436; //octal
-let f: number = 0xadf0d; //hexadecimal
-let g: number = "cat"; // error
+let a: string = undefined; // Error
+let b: string = null; // Error
+let c: string = ""; 
+let d: string = "y"; 
+let e: string = "building"; 
+let f: string = 3; //Error
+let g: string = "3"; 
 
 //cuando strictNullChecks es false
-let a1: number = undefined; // ok
-let b1: number = null; // ok
-let c1: number = 3; 
-let d1: number = 0b111001; // binary
-let e1: number = 0o436; //Octal
-let f1: number = 0xadf0d; // Hexadecimal
-let g1: number = "cat"; // Error
+let a1: string = undefined; // Ok
+let b1: string = null; // Ok
+let c1: string = ""; 
+let d1: string = "y"; 
+let e1: string = "building"; 
+let f1: string = 3; //Error
+let g1: string = "3"; 
 
 
