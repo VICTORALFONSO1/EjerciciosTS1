@@ -28,3 +28,5 @@ class Friend extends Person {
 let friendA = new Friend("William", 19, 8);
 
 friendA.friendSince();
+
+let personA = new Person("Amanda", 22);
