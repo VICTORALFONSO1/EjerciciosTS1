@@ -14,14 +14,18 @@
 //let e1: string = "building"; 
 //let f1: string = 3; //Error
 //let g1: string = "3"; 
+//enum Animals {cat, lion, dog, cow, monkey}
+//let c: Animals = Animals.cat;
+//console.log(Animals[3]); // cow
+//console.log(Animals.monkey); // 4
 var Animals;
 (function (Animals) {
-    Animals[Animals["cat"] = 0] = "cat";
-    Animals[Animals["lion"] = 1] = "lion";
-    Animals[Animals["dog"] = 2] = "dog";
-    Animals[Animals["cow"] = 3] = "cow";
-    Animals[Animals["monkey"] = 4] = "monkey";
+    Animals[Animals["cat"] = 1] = "cat";
+    Animals[Animals["lion"] = 2] = "lion";
+    Animals[Animals["dog"] = 11] = "dog";
+    Animals[Animals["cow"] = 12] = "cow";
+    Animals[Animals["monkey"] = 13] = "monkey";
 })(Animals || (Animals = {}));
 var c = Animals.cat;
-console.log(Animals[3]); // cow
-console.log(Animals.monkey); // 4
+console.log(Animals[3]); // undefined
+console.log(Animals.monkey); // 13
